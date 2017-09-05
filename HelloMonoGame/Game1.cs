@@ -41,6 +41,8 @@ namespace HelloMonoGame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+			Texture2D image = Content.Load<Texture2D>("Images/plane");
+
         }
 
         /// <summary>
@@ -50,6 +52,7 @@ namespace HelloMonoGame
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+			Content.Unload();
         }
 
         /// <summary>
